@@ -1,0 +1,15 @@
+CC = @CC@
+CFLAGS = @CFLAGS@ -Wall -Werror -pedantic -std=c11
+
+all: pmodel
+
+pmodel: pmodel.o
+	$(CC) -o $@ $^
+
+.PHONY: clean
+clean:
+	rm -f pmodel pmodel.o
+
+.PHONY: clean-dev
+clean-dev: clean
+	rm -f config.h config.log config.status configure Makefile compile_commands.json
