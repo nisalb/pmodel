@@ -1,3 +1,13 @@
 .ccls-cache/
-build
+autom4te.cache/
+build/
 
+*.o
+pmodel
+
+Makefile
+config.h
+configure
+config.log
+config.status
+compile_commands.json
