@@ -73,12 +73,12 @@ void print_usage(char *name)
 	printf("Usage: %s [OPTIONS]...\n", name);
 	printf("Prints the programming model of the host and basic type sizes.\n\n");
 	printf("OPTIONS:\n");
-	printf("\t -h\t\t prints this help message.\n");
-	printf("\t -v\t\t prints the version.\n");
-	printf("\t -s\t\t prints the sizes of types in the order of:\n");
-	printf("\t   \t\t\t char short int long longlong pointer\n");
-	printf("\t -S\t\t same as -s, but add a header of type names.\n");
-	printf("\t -m\t\t prints the programming model.\n");
+	printf("   -h     prints this help message.\n");
+	printf("   -v     prints the version.\n");
+	printf("   -s     prints the sizes of types in the order of:\n");
+	printf("             char short int long longlong pointer\n");
+	printf("   -S     same as -s, but add a header of type names.\n");
+	printf("   -m     prints the programming model.\n");
 	printf("\nWithout any arguments, -m is assumed.\n");
 }
 
