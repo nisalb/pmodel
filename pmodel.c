@@ -6,15 +6,16 @@
 
 #include "config.h"
 
-#define LP64  models[0]
-#define ILP64 models[1]
-#define LLP64 models[2]
-#define ILP32 models[3]
-#define LP32  models[4]
+#define MODELS models
+#define LP64   MODELS[0]
+#define ILP64  MODELS[1]
+#define LLP64  MODELS[2]
+#define ILP32  MODELS[3]
+#define LP32   MODELS[4]
 
 #define BITS(__n) (__n * 8)
 
-const char *models[] = { "LP64", "ILP64", "LLP64", "ILP32", "LP32" };
+const char *MODELS[] = { "LP64", "ILP64", "LLP64", "ILP32", "LP32" };
 
 struct sizes {
 	size_t c;
@@ -27,12 +28,12 @@ struct sizes {
 
 struct sizes get_sizes()
 {
-	struct sizes szs = { .c = BITS(sizeof(char)),
-			     .s = BITS(sizeof(short)),
-			     .i = BITS(sizeof(int)),
-			     .l = BITS(sizeof(long)),
+	struct sizes szs = { .c	 = BITS(sizeof(char)),
+			     .s	 = BITS(sizeof(short)),
+			     .i	 = BITS(sizeof(int)),
+			     .l	 = BITS(sizeof(long)),
 			     .ll = BITS(sizeof(long long)),
-			     .p = BITS(sizeof(void *)) };
+			     .p	 = BITS(sizeof(void *)) };
 
 	return szs;
 }
@@ -85,7 +86,7 @@ void print_usage(char *name)
 void print_version()
 {
 	printf("%s\n", PACKAGE_STRING);
-	printf("Report bus to %s or %s\n", PACKAGE_BUGREPORT, PACKAGE_URL);
+	printf("Report bugs to %s or %s\n", PACKAGE_BUGREPORT, PACKAGE_URL);
 	printf("Copyright 2021 Nisal Bandara\n");
 }
 
