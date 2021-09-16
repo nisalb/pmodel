@@ -7,7 +7,6 @@ pmodel
 
 Makefile
 config.h
-configure
 config.log
 config.status
 compile_commands.json

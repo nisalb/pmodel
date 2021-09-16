@@ -1,0 +1,10 @@
+2021-09-15	Nisal Bandara	<nisal.bandara@outlook.com>
+
+	Output the host systems programming model and primary integer sizes.
+	Autotools is used as the build system
+
+	* pmodel.c: Entire source of pmodel program
+	* configure.ac: Initial configure script
+	* Makefile.am: Initial Makefile format
+	* AUTHORS: added my name
+	* README: Description of the pmodel program

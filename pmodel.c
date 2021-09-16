@@ -97,7 +97,7 @@ int main(int argc, char **argv)
 	opterr = 0; // clear it
 
 	int c = 0;
-	while ((c = getopt(argc, argv, "hvsS")) != -1) {
+	while ((c = getopt(argc, argv, "hvsSm")) != -1) {
 		switch (c) {
 		case 'h':
 			print_usage(argv[0]);
